@@ -1,0 +1,6 @@
+{
+  "name": "Wonder Lanka Experience",
+  "description": "Stunning luxury tourism website for authentic Sri Lankan tours, tailored experiences, and premium destination management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
