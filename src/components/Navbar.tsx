@@ -53,19 +53,11 @@ export default function Navbar({ activeTab, setActiveTab, onPlanTripClick }: Nav
           <div
             id="brand-logo-container"
             onClick={() => handleNavItemClick('home')}
-            className="flex items-center space-x-2 cursor-pointer group"
+            className="flex items-baseline space-x-1.5 sm:space-x-2 cursor-pointer select-none leading-none py-1"
           >
-            <div className="w-10 h-10 rounded-full bg-emerald-600 flex items-center justify-center border border-emerald-400/30 shadow-md shadow-emerald-900/20 group-hover:scale-105 transition-transform">
-              <Share2 className="w-5 h-5 text-neutral-100" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold tracking-wider text-neutral-50 font-sans group-hover:text-emerald-300 transition-colors">
-                WONDER LANKA
-              </span>
-              <span className="text-[10px] uppercase tracking-[0.25em] text-amber-400 font-mono">
-                EXPERIENCE
-              </span>
-            </div>
+            <span className="text-[21px] sm:text-[25px] font-bold font-serif text-[#D95C1C] tracking-tight">Wonder</span>
+            <span className="text-[21px] sm:text-[25px] font-bold font-serif text-[#16B1BC] tracking-tight">Lanka</span>
+            <span className="text-[21px] sm:text-[25px] font-bold font-serif text-[#5BA370] tracking-tight">Experience</span>
           </div>
 
           {/* Desktop Navigation */}

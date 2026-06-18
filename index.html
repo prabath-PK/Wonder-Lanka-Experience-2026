@@ -2,6 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Polyfill/Patch to prevent Uncaught TypeError on read-only window.fetch inside sandbox iframes -->
+    <script>
+      (function() {
+        try {
+          var originalFetch = window.fetch;
+          if (originalFetch) {
+            var fetchValue = originalFetch;
+            Object.defineProperty(window, 'fetch', {
+              get: function() {
+                return fetchValue;
+              },
+              set: function(val) {
+                fetchValue = val;
+              },
+              configurable: true,
+              enumerable: true
+            });
+          }
+        } catch (e) {
+          try {
+            var proto = Object.getPrototypeOf(window) || Window.prototype;
+            if (proto && Object.getOwnPropertyDescriptor(proto, 'fetch')) {
+              var fetchValueProto = window.fetch;
+              Object.defineProperty(proto, 'fetch', {
+                get: function() {
+                  return fetchValueProto;
+                },
+                set: function(val) {
+                  fetchValueProto = val;
+                },
+                configurable: true,
+                enumerable: true
+              });
+            }
+          } catch (err) {
+            console.warn('Could not patch window.fetch fallback:', err);
+          }
+        }
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wonder Lanka Experience | Premium Sri Lanka Tours & Luxury Travels</title>
     <meta name="description" content="Discover Sri Lanka with Wonder Lanka Experience. Authentic cultural tours, wildlife safari glamping, surfing packages, honeymoons, and custom tailor-made itineraries." />

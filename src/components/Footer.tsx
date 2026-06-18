@@ -36,14 +36,13 @@ export default function Footer({ setActiveTab }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Column 1: Brand details */}
           <div id="footer-col-brand" className="space-y-6">
-            <div className="flex items-center space-x-2 cursor-pointer" onClick={() => handleLinkClick('home')}>
-              <div className="w-9 h-9 rounded-full bg-emerald-600 flex items-center justify-center border border-emerald-400/30">
-                <Share2 className="w-4.5 h-4.5 text-neutral-100" />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-lg font-bold tracking-wider text-neutral-50">WONDER LANKA</span>
-                <span className="text-[9px] uppercase tracking-[0.25em] text-amber-450 text-amber-400 font-mono">EXPERIENCE</span>
-              </div>
+            <div
+              className="flex items-baseline space-x-1.5 sm:space-x-2 cursor-pointer select-none leading-none py-1"
+              onClick={() => handleLinkClick('home')}
+            >
+              <span className="text-[21px] sm:text-[25px] font-bold font-serif text-[#D95C1C] tracking-tight">Wonder</span>
+              <span className="text-[21px] sm:text-[25px] font-bold font-serif text-[#16B1BC] tracking-tight">Lanka</span>
+              <span className="text-[21px] sm:text-[25px] font-bold font-serif text-[#5BA370] tracking-tight">Experience</span>
             </div>
             <p className="text-neutral-400 text-sm leading-relaxed">
               We specialize in tailor-made luxury tours, breathtaking locations, wildlife conservation safaris, and authentic Sri Lankan hospitality. Trust our local experts to guide you across the Pearl of the Indian Ocean.

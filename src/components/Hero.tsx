@@ -2,6 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Compass, Search, Calendar, ChevronRight, Sparkles, MapPin } from 'lucide-react';
 
+import culturalHero from '../assets/images/srilanka_cultural_hero_1781713945959.jpg';
+import teaEstate from '../assets/images/srilanka_tea_estate_1781713963590.jpg';
+import beachHero from '../assets/images/srilanka_beach_1781713979894.jpg';
+import wildlifeHero from '../assets/images/srilanka_wildlife_1781713996120.jpg';
+
 interface HeroProps {
   onExploreTours: () => void;
   onContactUs: () => void;
@@ -10,22 +15,22 @@ interface HeroProps {
 
 const slides = [
   {
-    image: 'https://images.unsplash.com/photo-1588598130841-3837f8a35e74?auto=format&fit=crop&q=80&w=1920',
+    image: culturalHero,
     title: 'Experience cultural wonders',
     subtitle: 'Sigiriya Lion Rock Fortress, an engineering miracle from the 5th century.'
   },
   {
-    image: 'https://images.unsplash.com/photo-1563189333-e57551cc7204?auto=format&fit=crop&q=80&w=1920',
+    image: teaEstate,
     title: 'Breathe highland air',
     subtitle: 'Pass through mist-veiled tea estates and dramatic mountains in Ella.'
   },
   {
-    image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&q=80&w=1920',
+    image: beachHero,
     title: 'Relax on sun-swept bays',
     subtitle: 'Trace lazy coconut trees and cobalt waters along Galle and Mirissa.'
   },
   {
-    image: 'https://images.unsplash.com/photo-1581888227599-779811939961?auto=format&fit=crop&q=80&w=1920',
+    image: wildlifeHero,
     title: 'Discover exotic wildlife',
     subtitle: 'Meet wild herds of elephants and elusive leopards inside Yala National Park.'
   }
