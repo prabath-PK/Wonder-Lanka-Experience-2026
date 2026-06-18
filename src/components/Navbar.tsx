@@ -28,7 +28,7 @@ export default function Navbar({ activeTab, setActiveTab, onPlanTripClick }: Nav
     { id: 'home', label: 'Home', icon: Compass },
     { id: 'destinations', label: 'Destinations', icon: MapPin },
     { id: 'experiences', label: 'Experiences', icon: Sparkles },
-    { id: 'tours', label: 'Tours & Custom Packages', icon: CalendarDays },
+    { id: 'tours', label: 'Tour Package', icon: CalendarDays },
     { id: 'contact', label: 'Contact', icon: Phone },
   ];
 

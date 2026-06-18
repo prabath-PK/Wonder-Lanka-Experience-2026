@@ -150,7 +150,7 @@ export default function DestinationsGrid({ searchQuery, setSearchQuery, onBookDe
                       onClick={() => setActiveDestination(dest)}
                       className="text-xs font-semibold uppercase tracking-wider text-amber-400 hover:text-amber-300 group/btn flex items-center space-x-1 cursor-pointer"
                     >
-                      <span>Full Travel Guide</span>
+                      <span>View more...</span>
                       <ArrowRight className="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" />
                     </button>
                     <button

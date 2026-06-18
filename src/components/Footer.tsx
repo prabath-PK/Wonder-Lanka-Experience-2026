@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Share2, Mail, Phone, MapPin, Send, CheckCircle2 } from 'lucide-react';
+import { Share2, Mail, Phone, MapPin, Send, CheckCircle2, Facebook, Instagram } from 'lucide-react';
 
 interface FooterProps {
   setActiveTab: (tab: string) => void;
@@ -48,17 +48,16 @@ export default function Footer({ setActiveTab }: FooterProps) {
               We specialize in tailor-made luxury tours, breathtaking locations, wildlife conservation safaris, and authentic Sri Lankan hospitality. Trust our local experts to guide you across the Pearl of the Indian Ocean.
             </p>
             <div className="flex space-x-4">
-              <a href="https://facebook.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-neutral-900 flex items-center justify-center hover:bg-emerald-800 hover:text-white transition-colors cursor-pointer text-neutral-300">
-                <span className="font-bold text-sm">fb</span>
+              <a href="https://facebook.com" target="_blank" rel="noreferrer" title="Facebook" aria-label="Facebook" className="w-10 h-10 rounded-full bg-neutral-900 flex items-center justify-center hover:bg-[#1877F2] hover:text-white transition-all duration-300 cursor-pointer text-neutral-300">
+                <Facebook className="w-4 h-4" />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-neutral-900 flex items-center justify-center hover:bg-emerald-800 hover:text-white transition-colors cursor-pointer text-neutral-300">
-                <span className="font-bold text-sm">ig</span>
+              <a href="https://instagram.com" target="_blank" rel="noreferrer" title="Instagram" aria-label="Instagram" className="w-10 h-10 rounded-full bg-neutral-900 flex items-center justify-center hover:bg-[#E1306C] hover:text-white transition-all duration-300 cursor-pointer text-neutral-300">
+                <Instagram className="w-4 h-4" />
               </a>
-              <a href="https://whatsapp.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-neutral-900 flex items-center justify-center hover:bg-emerald-800 hover:text-white transition-colors cursor-pointer text-neutral-300">
-                <span className="font-bold text-sm">wa</span>
-              </a>
-              <a href="https://tripadvisor.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-neutral-900 flex items-center justify-center hover:bg-emerald-800 hover:text-white transition-colors cursor-pointer text-neutral-300">
-                <span className="font-bold text-sm">ta</span>
+              <a href="https://t.me/wonderlanka" target="_blank" rel="noreferrer" title="Telegram" aria-label="Telegram" className="w-10 h-10 rounded-full bg-neutral-900 flex items-center justify-center hover:bg-[#0088cc] hover:text-white transition-all duration-300 cursor-pointer text-neutral-300">
+                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                  <path d="M20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.465l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701-.33 4.955c.486 0 .7-.223.973-.486l2.333-2.27 4.85 3.585c.893.493 1.536.24 1.759-.83l3.183-14.995c.325-1.305-.5-1.902-1.353-1.521z" />
+                </svg>
               </a>
             </div>
           </div>
@@ -159,9 +158,9 @@ export default function Footer({ setActiveTab }: FooterProps) {
         <div className="mt-16 pt-8 border-t border-neutral-900 flex flex-col sm:flex-row justify-between items-center text-xs text-neutral-500 bg-neutral-950">
           <p>© 2026 Wonder Lanka Experience (Pvt) Ltd. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 sm:mt-0">
-            <a href="#privacy" className="hover:text-amber-400 transition-colors">Privacy Policy</a>
-            <a href="#terms" className="hover:text-amber-400 transition-colors">Terms of Service</a>
-            <a href="#sitemap" className="hover:text-amber-400 transition-colors">Global XML Sitemap</a>
+            <span className="text-neutral-500">
+              Experience crafted by <strong className="font-bold text-neutral-400">StudioColart</strong> · Platform powered by <strong className="font-bold text-neutral-400">Grobern</strong>
+            </span>
           </div>
         </div>
       </div>

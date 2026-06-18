@@ -138,14 +138,14 @@ export default function ContactSection({ inquiryPrePopulate, onClearPrePopulate 
           {/* Column 1: Info & Embedded map */}
           <div className="lg:col-span-4 space-y-8">
             <div className="bg-neutral-950 p-6 rounded-2xl border border-neutral-850 space-y-6">
-              <h3 className="text-lg font-bold text-neutral-50 font-sans">Colombo Headquarters</h3>
+              <h3 className="text-lg font-bold text-neutral-50 font-sans">Weligama Head Office</h3>
               
               <div className="space-y-4 text-sm text-neutral-400">
                 <div className="flex items-start space-x-3.5">
                   <MapPin className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
                   <div>
                     <p className="font-semibold text-neutral-200">Our Address</p>
-                    <p>45 Galle Road, Colombo 03, Sri Lanka</p>
+                    <p># 1/5 ,Gurubebila , Weligama. 81700.</p>
                   </div>
                 </div>
 
@@ -178,11 +178,11 @@ export default function ContactSection({ inquiryPrePopulate, onClearPrePopulate 
               </div>
             </div>
 
-            {/* Embedded Sri Lanka Web Map (OSM standard, super high contrast) */}
+             {/* Embedded Sri Lanka Web Map (OSM standard, super high contrast) */}
             <div className="bg-neutral-950 rounded-2xl border border-neutral-810 border-neutral-800 overflow-hidden h-72 relative">
               <iframe
                 title="Sri Lanka Map Locator"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.228498877207!2d79.8447814!3d6.9270791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593f65b111d9%3A0xa196f7c706bf99a!2sColpetty%20Rd%2C%20Colombo!5e0!3m2!1sen!2slk!4v1655000000000!5m2!1sen!2slk"
+                src="https://maps.google.com/maps?q=Gurubebila,%20Weligama,%20Sri%20Lanka&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg) contrast(110%) greyscale(30%)' }}
@@ -191,7 +191,7 @@ export default function ContactSection({ inquiryPrePopulate, onClearPrePopulate 
                 referrerPolicy="no-referrer"
               />
               <div className="absolute bottom-3 left-3 bg-neutral-900/90 backdrop-blur border border-neutral-800 px-3 py-1.5 rounded-lg text-[10px] font-mono text-neutral-300">
-                📍 Head office: Galle Road, Colpetty
+                📍 # 1/5 ,Gurubebila , Weligama. 81700.
               </div>
             </div>
           </div>
