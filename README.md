@@ -2,10 +2,6 @@
 <img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
 </div>
 
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
-
 ## Wonder Lanka Experience - Professional Tour Operator Website
 
 Welcome to the official repository for the **Wonder Lanka Experience** website, owned and managed by **Gayan Waruna**. This project is a highly professional, SEO-optimized, and visually stunning multi-page website designed to showcase Sri Lanka's premier destinations, custom tour plans, and private driver services.
